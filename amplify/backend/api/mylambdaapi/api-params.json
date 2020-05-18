@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/pets",
+            "lambdaFunction": "mylambdaapifunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/people",
+            "lambdaFunction": "mylambdaapifunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "mylambdaapi",
+    "apiName": "mylambdaapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mylambdaapifunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifytest-dev-205019-authRole",
+        "unAuthRoleName": "amplify-amplifytest-dev-205019-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mylambdaapifunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "3a94b920"
+}
